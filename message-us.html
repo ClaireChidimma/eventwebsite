@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="this is an event management website">
+    <meta name="author" content="Claire_Henry">
+    <meta name="keyword" content="HTML, message us page, Claire_Henry">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="message-us.css">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="icon" href="./icon/logomain.ico">
+    <title>Message Us Now - Claire Henry Events</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <a href="index.html" class="left1 topic top fixed-top">Claire Henry
+                <div class="eve1 text-decoration-none">EVENTS</div>
+            </a>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="send">
+            <h6 class="text-center">SEND US A MESSAGE</h6>
+            <h1 class="text-center mt-4">LET'S GET STARTED</h1>
+        </div>
+        <div class="container">
+            <div class="row infocon">
+                <form action="https://formspree.io/f/meqwnedo" method="post">
+                    <div class="col-8 info">
+                        <div class="form-group mb-4">
+                            <label class="fw-bold">FIRST NAME</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Claire">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="fw-bold">LAST NAME</label>
+                            <input type="text" name="lastname" id="secname" class="form-control" placeholder="Henry">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="fw-bold">EMAIL ADDRESS</label>
+                            <input type="email" name="EMAIL" id="email" class="form-control" placeholder="clairehenry@gmail.com">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="fw-bold">PHONE NUMBER</label>
+                            <input type="phone number" name="" id="phone" class="form-control" placeholder="+2348140768729">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="fw-bold">REQUESTED DATE</label>
+                            <input type="date" name="DATE" id="date" class="form-control" placeholder="e.g YYMMDD">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="fw-bold">ESTIMATED GUEST COUNT</label>
+                            <input type="text" name="NUMBER" id="guest" class="form-control">
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="fw-bold mb-2">TYPE OF EVENT</label><br>
+                            <select>
+                                <option>PLEASE SELECT</option>
+                                <option>CORPORATE EVENTS</option>
+                                <option>WEDDING</option>
+                                <option>SOCIAL EVENTS</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="message"></div>
+                        <div class="form-group">
+                            <button class="btn btn-outline-dark" onclick="validate()">submit</button>
+                        </div>
+                
+                    </div> 
+                </form> 
+            </div>
+        </div> 
+
+        <!-- scroll to top -->
+        <button id="mybtn" title="go to top">
+            <i class="fas fa-angle-double-up"></i>
+        </button>
+        <!-- end of scroll to top -->
+    </main>
+    
+    <footer>
+        
+        <div class="container footer1">
+                <div class="row">
+                    <div class="col-3">
+                        <h6 class="space1">ABOUT</h6>
+                        <p>Claire Henry Events is a full-service event planning and design company providing a wide array of event
+                            services from venue styling to vendor management, event staffing, and more.</p>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="space1">CLAIRE HENRY EVENTS</h6>
+                        <p>The Bridge Building Event Spaces</p>
+                        <p>The Bell Tower</p>
+                        <p>The Estate at Cherokee Dock</p>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="space1">CONTACT US</h6>
+                        <p>345 Hill Ave. Nashville, TN 37210</p>
+                        <p>615.369.6474</p>
+                        <P><a href="tel:+2348140768729" class="text-decoration-none paint2">Call Us</a></P>
+                        <P><a href="mailto:onwukaozioma@gmail.com" class="text-decoration-none paint2">Send Us Mail</a></P>
+                    </div>
+                    <div class="col-3">
+                        <h6><a href="#" class="space2"> MESSAGE US NOW</a></h6>
+                        <p>Whether you are planning a wedding, a corporate meeting or a social gathering, the diverse scope of Claire
+                            Henry Events allows for the creation of unique events for all occasions.</p>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="container-fluid footer3">
+            <div class="row">
+                <div class="col-5">
+                    <p class="text-white redu">COPYRIGHT © 2023 CLAIRE HENRY EVENTS.</p>
+                </div>
+                <div class="col-3.5 mb-2">
+                    <a href="#" class="paint1"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="paintinst"> <i class="fab fa-instagram"></i></a>
+                    <a href="#" class="paint3"> <i class="fab fa-twitter"></i></a>
+                    <a href="#" class="paint4"> <i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="col-3.5"> 
+                    <p class="text-white">CLAIRE HENRY</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./bootstrap.bundle.min.js"></script>
+<script src="./jquery-3.2.1.min.js"></script>
+<script src="./all.js"></script>
+
+
+
+<!-- to validate a form -->
+<script>
+    function validate() {
+        
+        let name = $('#name').val()
+        let secname = $('#secname').val()
+        let email = $('#email').val()
+        let phone = $('#phone').val()
+        let date = $('#date').val()
+        let guest= $('#guest').val()
+        
+
+
+        if (name === null || name === '') {
+            message.textContent = 'Please enter your first name'
+            message.style.color = 'red'
+            return false
+        }
+        if (secname === null || secname === '') {
+            message.textContent = 'Please enter your last name'
+            message.style.color = 'red'
+            return false
+        }
+        if (email === null || email === '') {
+            message.textContent = 'Please enter your email address'
+            message.style.color = 'red'
+            return false
+        }
+        if (email.indexOf('@') < 0) {
+            message.textContent = 'Please enter your correct email'
+            message.style.color = 'red'
+            return false
+        }
+
+        if (phone === null || phone === '') {
+            message.textContent = 'Please enter correct phone number'
+            message.style.color = 'red'
+            return false
+        }
+        if (phone.lenght < 14) {
+            message.textContent = 'Phone number must be 14 numbers long'
+            message.style.color = 'red'
+            return false
+        }
+
+        if (date === null || date ==='') {
+            message.textContent = 'Please enter your date'
+            message.style.color = 'red'
+            return false
+        }
+
+        if (guest === null || guest === '') {
+            message.textContent = 'Please enter number of your guest'
+            message.style.color = 'red'
+            return false
+        } else {
+            alert('successful')
+            window.location.href = 'index.html'
+        }
+    }
+</script>
+
+
+ <script>
+    //  function to display button
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 50){
+            $('#mybtn').fadeIn('slow')
+        }else(
+            $('#mybtn').fadeOut('slow')
+    )
+    
+    });
+
+    // function to scroll top
+    $('#mybtn').click(function(){
+        $('html,body').animate({ scrollTop: 0}, 'slow')
+        return false;
+    });
+</script>
+
+</html>

@@ -1,0 +1,419 @@
+*{
+  padding: 0;
+  margin:0;
+}
+
+@media(max-width:800px){
+  html{
+    overflow-x: hidden;
+  }
+}
+
+.ff{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+  font-size: 17px;
+}
+
+/* nav starts */
+
+  /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 0px 8px 0px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+ /* style the button outline */
+ .btn-outline-dark{
+  position:absolute;
+  left:5px;
+  top:5px;
+  padding:5px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.logo{
+  display:flex;
+  justify-content:right; /*to move the logo to the right, you can equally us end inplace of right.*/
+} 
+.imglogo{
+  width: 7rem;
+  height:5rem;
+  position: relative;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* nav ends */
+
+/* hero-section satrts*/
+.hero-section{
+  background-image: url(./img-1.jpg); 
+  background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),   url(./img-1.jpg), cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  /* background-attachment: fixed; */
+  opacity:1;
+  width:100rem;
+  height:500px;
+  position:absolute; /*this made the image to expand to the right*/
+  left:0; /*made image to extend to the left*/
+  margin-top:-1.3rem; /* made the the image to cover up the up sapce*/
+}
+
+
+.hero-content{
+  position: relative;
+  top:10rem;
+}
+.ohb:hover{
+  background-color: black! important;
+}
+.ohbt:hover{
+  background-color: black! important;
+  color:white;
+}
+/* hero-section ends */
+
+/* about starts */
+.about{
+  margin-top: 34rem;
+}
+
+ul{
+  list-style-type: none;
+  margin-left: -2rem;
+}
+/* about ends */
+
+/* why choose us */
+.bdyb{
+  position:relative;
+  left: 1px;
+  /* margin-left: 2rem; */
+}
+.wcu1{
+  text-align-last: right;
+}
+.wcuc{
+  background-color: rgb(132, 126, 126);
+  position:relative;
+  left:5rem;
+  margin-right:3rem;
+}
+@media(max-width:800px){
+  .wcuc{
+  position:relative;
+  left:0px;
+  margin-right:1rem;  
+  }
+}
+.wcuc:hover{
+  background-color: red;
+}
+.wcucs{
+  background-color: red;
+  position:relative;
+  left:5rem;
+  margin-right:3rem
+}
+@media(max-width:800px){
+  .wcucs{
+  position:relative;
+  left:0px;
+  margin-right:1rem;  
+  }
+}
+
+.wcucs:hover{
+  background: rgb(132, 126, 126);
+}
+
+.edg{   /* container-fluid couldn`t get to the edge so i had to improvise */
+  width:98.3vw;
+  margin-left: -1.3rem;
+}
+
+/* why choose us ends */
+
+
+/* the best fitness*/
+.pic1{
+  height: 65vh;
+  width: 26rem;
+}
+/* the best fitness ends*/
+
+
+/* gallery */
+
+.ig1,.ig2, .ig3, .ig4,.ig5, .ig6{ 
+  height: 90vh;
+  transition:1s ease-in;
+  z-index: 2; 
+}
+.ig1,.ig4{
+  position:relative;
+  left:-1.3rem;
+}  
+.ig3,.ig6{
+  position:relative;
+  right:-0.6rem;
+} 
+.ig1,.ig2,.ig5{
+  position: relative;
+  min-width: 26.4vw;
+}
+.ig4{
+  position: relative;
+  min-width: 50.9vw;
+}
+
+.ig1:hover{
+  cursor: pointer;
+  min-width: 27vw;
+  height:102%;
+  transition: 1s ease-in;
+  opacity: 0.8; 
+  z-index: 1.5;
+} 
+ 
+.ig2:hover{
+  cursor: pointer;
+  min-width: 27vw;
+  height:102%;
+  transition: 1s ease-in;
+  opacity: 0.8; 
+  z-index: 1.5;
+}
+.ig3:hover{
+  cursor: pointer;
+  min-width: 27vw;
+  height:102%;
+  transition: 1s ease-in;
+  opacity: 0.8; 
+  z-index: 1.5;
+}
+.ig4:hover{
+  cursor: pointer;
+  min-width: 54vw;
+  height:102%;
+  transition: 1s ease-in;
+  opacity: 0.9; 
+  z-index: 1.5;
+}
+.ig5:hover{
+  cursor: pointer;
+  min-width: 27vw;
+  height:102%;
+  transition: 1s ease-in;
+  opacity: 0.8; 
+  z-index: 1.5;
+}
+.ig6:hover{
+  cursor: pointer;
+  height:102%;
+  transition: 1s ease-in;
+  opacity: 0.8; 
+  z-index: 1.5;
+}
+/* gallery end */
+
+/* our pricing */
+.wdth{
+  width:21.8vw;
+  margin-left: -0.8rem;
+}
+@media(max-width:800px){
+  .wdth{
+    width:89vw;
+    margin-left: -0.8rem;
+  }
+}
+.lineh{ 
+  line-height: 9px;
+}
+.rundbg{
+  width: 3.4rem;
+  height: 3.4rem;
+  background-color: #111111;
+  border-radius: 50%;
+  position: relative;
+  left:5rem;
+}
+@media(max-width:800px){
+  .rundbg{
+    width: 3.4rem;
+    height: 3.4rem;
+    background-color: #111111;
+    border-radius: 50%;
+    position: relative;
+    left:9.8rem;
+  }
+}
+.marl{
+  position: relative;
+  left: 3rem;
+}
+@media(max-width:800px){ 
+  .marl{ 
+    position: relative; 
+    left: 0rem; 
+  } 
+} 
+.marll{
+  position: relative;
+  right: -6rem;
+}
+ @media(max-width:800px){ 
+  .marll{
+    position: relative;
+    right: -0px;
+  }
+} 
+/* our pricing ends */
+
+/* contact us */
+.pddn{
+  padding:7rem;
+}
+/* contact us ends */
+
+/* request a quote */
+.imgqut{
+  height:100%;
+}
+.tty{
+  transform: translateY(-10%);
+}
+#name,#secname{
+  text-transform: capitalize;
+  outline:none;
+}
+/* request a quote ends */
+
+
+/* sign up */
+.signup{
+  position: relative;
+  left:-3rem;
+}
+.linhyt{
+  line-height: 2px;
+}
+/* sign up ends */
+
+
+/* scroll to top */
+#mybtn{
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  width:50px;
+  height:50px;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 15px;
+  background-color: whitesmoke;
+  border:  rgb(213, 207, 207);
+  opacity:0.9;        
+  transition: 2s ease;
+  z-index: 99;
+  display: none;
+  margin-right:18px;
+  }
+#mybtn:hover{
+  background-color: #4d4046;
+  transition: 2s ease;
+  }
+.fa-angle-double-up{
+  color: rgb(235, 37, 37);
+  position:relative;
+  bottom:0.1rem;
+  font-size:1.3rem;
+  }
+
+/* end of scroll to top */
+
+/* footer 2 */
+.backgc{
+  background-color:rgb(68, 56, 56);
+  
+}
+.gymster{
+  width:10rem;
+}
+.spacein{
+  margin-right:13rem;
+  padding:0.2rem;
+}
+.lstst{
+  list-style-type: square;
+  line-height: 2.2rem;
+}
+.lststa:hover{
+  color:red! important;
+}
+.redline{
+  border-bottom:1px solid red;
+  max-width: 3rem;
+}
+.ftmap{
+  margin-left:-2rem;
+}
+.lynht{
+  line-height: 2px;
+}
+.bordto{
+  border-top:1px dotted white;
+}
+.deve{
+  letter-spacing: 8px;
+}
+/* footer 2 ends */

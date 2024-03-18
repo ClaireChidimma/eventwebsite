@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* nav */
+
+.topic{
+    font-family: algerian;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 3rem;
+    color:rgb(233, 204, 43);
+    margin-left:27rem;
+}
+@media(max-width:900px){
+    .topic{
+        font-weight:300;
+        font-size:2rem;
+        margin-left: 5rem;
+    }
+} 
+.topic:hover{
+    color:rgb(233, 204, 43);
+    text-shadow: 2px -2px 2px rgb(185, 176, 176);
+}
+.eve1{
+    margin-top:-0.5rem;
+    margin-left:13.3rem;
+    font-size:15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media(max-width:900px){
+    .eve1{
+        margin-left: 9rem;
+    }
+} 
+/* nav ends */
+
+/* message */
+.send{
+    margin-top: 10rem;
+    letter-spacing: 3px;
+}
+.infocon{
+    margin-top: 4rem !important;
+}
+
+.info{
+    margin-left:8rem;
+}
+/* message */
+
+
+/* scroll to top */
+#mybtn{
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: whitesmoke;
+    border:  rgb(213, 207, 207);
+    opacity:0.9;        
+    transition: 2s ease;
+    z-index: 99;
+    display: none;
+    margin-right:18px;
+    }
+#mybtn:hover{
+    background-color: #4d4046;
+    transition: 2s ease;
+    }
+.fa-angle-double-up{
+    color: rgb(233, 204, 43);
+    position:relative;
+    bottom:0.1rem;
+    font-size:1.3rem;
+    }
+/* end of scroll to top */
+
+
+
+/* footer */
+footer{
+    background-color: rgb(240, 244, 245);  
+}
+.footer1{
+    padding:8rem 0;
+}
+
+.paint2{
+    color:black;
+    transition:1s ease;
+}
+.paint2:hover{
+    color:black;
+    font-size:18px;
+    transition:1s ease;
+}
+.space1{
+    color: rgb(130, 125, 125);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.space2{
+    color: rgb(130, 125, 125);
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    transition: 1s ease;
+}
+.space2:hover{
+    font-size:18px;
+    color:black;
+    transition: 1s ease;
+    text-decoration: none;
+}
+.footer3{
+    background-color:rgb(46, 46, 46);
+}
+.redu{
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.paint1, .paintinst, .paint3, .paint4{
+    color:white;
+    font-size: 1.5rem;
+    margin:0.5rem
+}
+.paint1:hover{
+    color:blue;
+}
+.paintinst:hover{
+    color:rebeccapurple;
+}
+.paint3:hover{
+    color:rgb(10, 154, 238);
+}
+.paint4:hover{
+    color:rgb(255, 0, 0);
+}
+
+
+/* footer ends */
